@@ -14,9 +14,20 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    tag_name: {
-      type: DataTypes.STRING,
-      allowNull: false,
+    //Removed product_id and tag_id from Tag.js and used tag_name there instead.  Added product_id and tag_id in here.  This is an attempt to resolve a problem with the tag table not seeding.  I think this was caused by a conflict because product_id and tag_id were fields defined directly in the Tag model but they were also part of the ProductTag model
+    product_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'product',
+        key: 'id',
+      },
+    },
+    tag_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'tag',
+        key: 'id',
+      },
     },
   },
   {
