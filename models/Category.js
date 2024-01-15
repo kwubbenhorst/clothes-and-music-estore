@@ -1,3 +1,4 @@
+// This is one of four Model files which structure the four tables of the database. Source code was provided, but the definition of fields was left up to me.
 // import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
 // import our database connection from config.js
@@ -28,5 +29,4 @@ Category.init(
   }
 );
 
-//Exports the model so it can be imported by models/index.js and in turn exported from there with the 3 other models to be imported by  the files in the routes/api folder
 module.exports = Category;

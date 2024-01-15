@@ -1,3 +1,4 @@
+// This file runs the methods which will populate the database using the content of the table-specific seeds files. It was given in the sourcecode. Setting force to true as this file does is recommended for testing and development but it can lead to dataloss in a published application since it clears the fields of data with every server restart.
 require('dotenv').config();
 const seedCategories = require('./category-seeds');
 const seedProducts = require('./product-seeds');

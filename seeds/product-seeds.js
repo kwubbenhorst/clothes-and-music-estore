@@ -1,5 +1,6 @@
-const { Product } = require('../models');
 
+// This file, and those for seeding the other three tables, were given in the sourcecode. In a properly configured application sequelize will use them to populate the database when "npm run seed" is entered in the terminal
+const { Product } = require('../models');
 const productData = [
   {
     product_name: 'Plain T-Shirt',

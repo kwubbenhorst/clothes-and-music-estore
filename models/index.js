@@ -1,3 +1,4 @@
+// This file defines the associations between the models/tables, one of the hallmarks of "relational" databases. There was some sourcecode given in this file but the crucial part of defining the associations was left up to me. 
 // import models
 const Category = require('./Category');
 const Product = require('./Product');
